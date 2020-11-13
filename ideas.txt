@@ -1,0 +1,22 @@
+1: flalling objects
+2:pick ups/health/speed
+3:enemys
+4:crash,landing
+------------------------
+1:growing resouces
+2:Building up city
+3:build up population
+------------------------
+1:you
+2:scientist
+3:Enemys
+4:Rocket
+5:travelment merchent
+6:peaple
+7:president
+------------------------
+1:
+2:
+3:
+4:
+5:

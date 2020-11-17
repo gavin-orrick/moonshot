@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="Theme" id=1]
+
+[node name="Node2D" type="Node2D"]
+show_behind_parent = true
+light_mask = 17
+position = Vector2( 127, 118 )
+
+[node name="Control" type="Control" parent="."]
+show_behind_parent = true
+light_mask = 17
+anchor_bottom = 0.5
+theme = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="Control"]
+
+[node name="Label" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "main menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}

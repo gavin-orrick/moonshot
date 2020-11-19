@@ -1,11 +1,16 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://main scenes/starting player/player 1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Background01.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/MeteorSmall.tscn" type="PackedScene" id=3]
 
 [node name="Game play" type="Node2D"]
 
 [node name="Background" parent="." instance=ExtResource( 2 )]
+
+[node name="MeteorSmall" parent="." instance=ExtResource( 3 )]
+minSpeed = 100.0
+maxSpeed = 150.0
 
 [node name="Area2D" parent="." instance=ExtResource( 1 )]
 position = Vector2( -5.04144, 260.606 )

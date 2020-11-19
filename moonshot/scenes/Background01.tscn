@@ -5,7 +5,7 @@
 [ext_resource path="res://assets/sprites/Effects/star2.png" type="Texture" id=3]
 
 [node name="Background" type="Sprite"]
-scale = Vector2( 3.08306, 4.80428 )
+scale = Vector2( 1.78707, 2.37639 )
 texture = ExtResource( 1 )
 centered = false
 

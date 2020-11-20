@@ -13,4 +13,4 @@ minSpeed = 100.0
 maxSpeed = 150.0
 
 [node name="Area2D" parent="." instance=ExtResource( 1 )]
-position = Vector2( -5.04144, 260.606 )
+position = Vector2( 225.264, 309.687 )

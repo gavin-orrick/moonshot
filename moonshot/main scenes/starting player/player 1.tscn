@@ -9,19 +9,19 @@ radius = 43.1351
 [node name="Area2D" type="Area2D"]
 script = ExtResource( 2 )
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1.12103, 0.85817 )
+shape = SubResource( 1 )
+
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 1.12103, 0.85817 )
 scale = Vector2( 0.75, 0.75 )
 texture = ExtResource( 1 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 1.12103, 0.85817 )
-shape = SubResource( 1 )
+[node name="firingpositions" type="Node2D" parent="."]
 
-[node name="firing" type="Node2D" parent="."]
-
-[node name="left gun" type="Node2D" parent="firing"]
+[node name="left gun" type="Node2D" parent="firingpositions"]
 position = Vector2( -33.4813, -0.403175 )
 
-[node name="right gun" type="Node2D" parent="firing"]
+[node name="right gun" type="Node2D" parent="firingpositions"]
 position = Vector2( 35.3029, -0.403175 )

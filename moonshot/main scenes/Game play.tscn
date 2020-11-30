@@ -8,6 +8,7 @@
 [node name="Game play" type="Node2D"]
 
 [node name="Background" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1.41422, 0 )
 
 [node name="MeteorSmall" parent="." instance=ExtResource( 3 )]
 position = Vector2( 230.305, 41.5305 )
@@ -15,7 +16,7 @@ minSpeed = 100.0
 maxSpeed = 150.0
 
 [node name="player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 220.37, 498.951 )
+position = Vector2( 238.755, 573.904 )
 
 [node name="Bullet" parent="." instance=ExtResource( 4 )]
 position = Vector2( 271.315, 545.925 )

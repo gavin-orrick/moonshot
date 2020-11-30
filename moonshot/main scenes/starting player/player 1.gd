@@ -1,6 +1,9 @@
 extends Area2D
 
 var plbullet := preload("res://scenes/Bullet.tscn")
+onready var firedelaytimer := $firedelaytimer
+
+export var firedelay: float = 0.15
 
 onready var animatedsprite := $animatedsprite
 onready var firingpositions := $firingpositions
@@ -22,7 +25,8 @@ func _physics_process(delta):
 		vel.y = -speed
 	elif Input.is_action_pressed("Move_down"):
 		vel.y = speed 
-	if Input.is_action_pressed("Shoot"):
+	if Input.is_action_pressed("Shoot") and firedelaytimer.is_stopped():
+		firedelaytimer.start(firedelay)
 		for child in firingpositions.get_children():
 			var bullet := plbullet.instance()
 			bullet.global_position = child.global_position

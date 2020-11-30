@@ -19,9 +19,14 @@ scale = Vector2( 0.75, 0.75 )
 texture = ExtResource( 1 )
 
 [node name="firingpositions" type="Node2D" parent="."]
+position = Vector2( 0.840897, 0.420448 )
 
 [node name="left gun" type="Node2D" parent="firingpositions"]
 position = Vector2( -33.4813, -0.403175 )
 
 [node name="right gun" type="Node2D" parent="firingpositions"]
 position = Vector2( 35.3029, -0.403175 )
+
+[node name="firedelaytimer" type="Timer" parent="."]
+wait_time = 0.15
+one_shot = true
